@@ -17,6 +17,7 @@ class Screeners extends Component {
                     percent_change_1h: "0",
                     percent_change_24h: "0",
                     percent_change_7d: "0",
+                    market_cap_usd: "1",
                 },
                 {
                   id: "ethereum",
@@ -26,6 +27,7 @@ class Screeners extends Component {
                   percent_change_1h: "0",
                   percent_change_24h: "0",
                   percent_change_7d: "0",
+                  market_cap_usd: "1",
                 },
                 {
                   id: "litecoin",
@@ -35,6 +37,7 @@ class Screeners extends Component {
                   percent_change_1h: "0",
                   percent_change_24h: "0",
                   percent_change_7d: "0",
+                  market_cap_usd: "1",
                 }
             ]
         }
@@ -48,7 +51,7 @@ class Screeners extends Component {
     fetchCryptocurrencyData() {
         axios.get("https://api.coinmarketcap.com/v1/ticker/")
             .then(response => {
-                var wanted = ["bitcoin", "ethereum", "litcoin"];
+                var wanted = ["bitcoin", "ethereum", "litecoin"];
                 var result = response.data.filter(currency => wanted.includes(currency.id));
                 this.setState({data: result});
             })

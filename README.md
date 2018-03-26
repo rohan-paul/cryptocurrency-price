@@ -1,4 +1,4 @@
-A small app just to fetch some price data using coinmarketcap API.
+A super small app fetching prices of cryptocurrencies using coinmarketcap API.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
 
