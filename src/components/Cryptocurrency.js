@@ -22,7 +22,7 @@ class Cryptocurrency extends Component {
       <p> {percent_change_1h}% 1hr </p>
       <p> {percent_change_24h}% 24hr </p>
       <p> {percent_change_7d}% 7days </p>
-      <p> { (+market_cap_usd).toFixed(2) } </p>
+      <p> Market Cap { (+market_cap_usd).toFixed(2) } </p>
 
     </li>
   )
