@@ -1,4 +1,4 @@
-A super small app fetching prices of cryptocurrencies using coinmarketcap API.
+A super small app fetching prices of cryptocurrencies using coinmarketcap API. Live version running [here at Heroku](https://intense-caverns-49962.herokuapp.com/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
 
