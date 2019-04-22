@@ -1,28 +1,37 @@
-A super small app fetching prices of cryptocurrencies using coinmarketcap API. Live version running [here at Heroku](https://crypto-currency-price-reactjs.herokuapp.com/)
+A super small app fetching prices of cryptocurrencies using coinmarketcap API. Live version running [here at Surge](https://cryptocurrency-react-app.surge.sh/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
 
-## Available Scripts
+#### Deploy Create React App with Surge
 
-In the project directory, run the below to install all dependencies:
+create a build folder
 
-### `npm install`
+```js
+npm run build
+```
 
-In the project directory, you can run:
+```
+cd build
+```
 
-### `npm start`
+Run Surge,
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```js
+surge;
+```
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+At the step where it will give me a default site name, I can just put my own, by deleting the default one.
 
-### `npm test`
+But only thing is that I have to add “.surge.sh” to my site name. So in this case, I will put `cryptocurrency-react-app.surge.sh`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
+#### After a site has been deployed, how push the diffs to the earlier deployed site - to the same URL
 
-### `npm run build`
+**Just like most deployment, it will just be a fresh deployment.** So at the step ( during the fresh deploy of a new project), when I have to choose / edit the exact URL name (keeping .surge.sh at the end intact) - just type the same old URL again, which will be
 
-Builds the app for production to the build folder.
+`cryptocurrency-react-app.surge.sh`
+
+NOTE - They clearly mention in their site that at this moment, there’s no functionality to push only the diffs, they will have to push the entire project again replacing the previous files.
+
+[https://surge.sh/help/using-incremental-publishing](https://surge.sh/help/using-incremental-publishing)
+
+and follow the prompts. All it needs is an email and a password, and you can optionally specify a different domain name.
