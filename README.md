@@ -1,6 +1,6 @@
 A super small app fetching prices of cryptocurrencies using coinmarketcap API. Live version running [here at Surge](https://cryptocurrency-react-app.surge.sh/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
+![](2020-08-20-22-47-40.png)
 
 #### Deploy Create React App with Surge
 
@@ -8,16 +8,10 @@ create a build folder
 
 ```js
 npm run build
-```
 
-```
 cd build
-```
 
-Run Surge,
-
-```js
-surge;
+surge
 ```
 
 At the step where it will give me a default site name, I can just put my own, by deleting the default one.
@@ -26,7 +20,7 @@ But only thing is that I have to add “.surge.sh” to my site name. So in this
 
 #### After a site has been deployed, how push the diffs to the earlier deployed site - to the same URL
 
-**Just like most deployment, it will just be a fresh deployment.** So at the step ( during the fresh deploy of a new project), when I have to choose / edit the exact URL name (keeping .surge.sh at the end intact) - just type the same old URL again, which will be
+**Just like most deployment, it will have to be a fresh deployment.** So at the step ( during the fresh deploy of a new project), when I have to choose / edit the exact URL name (keeping .surge.sh at the end intact) - just type the same old URL again, which will be
 
 `cryptocurrency-react-app.surge.sh`
 
